@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <style>
+        /* ===== Mobile menu CSS ===== */
+        @media (max-width: 900px){
+            nav ul{
+                position: fixed;
+                top: 0;
+                right: -250px; /* hidden by default */
+                width: 250px;
+                height: 100vh;
+                background: #ff004f;
+                padding-top: 70px;
+                transition: 0.5s;
+                text-align: left;
+                z-index: 100;
+            }
+
+            nav ul li{
+                display: block;
+                margin: 30px 20px;
+            }
+
+            .menu-btn {
+                display: block;
+                font-size: 28px;
+                cursor: pointer;
+                color: #fff;
+            }
+
+            .close-btn {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 28px;
+                cursor: pointer;
+                color: #fff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo...jpeg" class="logo">
+            
+            <!-- Menu Button -->
+            <div class="bar menu-btn">
+                <i class="fa-sharp fa-solid fa-list"></i>
+            </div>
+
+            <ul>
+                <!-- Close Button inside menu -->
+                <div class="bar close-btn">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#skill">SKILL</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#mywork">My Work</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-text">
+            <p>DATA SCIENCE STUDENT</p>
+            <h1>Hi, I'm <span>Simra Naveed</span> <br>From Pakistan</h1>
+             <a href="https://www.instagram.com/_.simranaveed?igsh=MWM0ZDE4N3p6NnU3YQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+  </div>  
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img class="profile" src="pic.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p> My name is  Simra Naveed, and I am currently pursuing my studies in Data Science at FAST University, Karachi Campus. I am passionate about technology and enjoy building technical skills that support my future career. I have developed a foundation in HTML, CSS, MS Office, C programming, and Adobe Photoshop, which allows me to work on both technical and creative projects.
+                I am a curious learner who loves reading and gaining new knowledge. I believe in continuous improvement and staying updated with modern tools and technologies. My long-term goal is to become a successful data science professional and work on projects that create meaningful impact in the world of technology.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <div id="education">
+    <div class="container">
+        <h1 class="sub-title">Education</h1>
+        <div class="education-list">
+            <div>
+                <h2>Bachelor of Data Science</h2>
+                <p>National University Of Computer And Emerging Science, 2025-Present</p>
+            </div>
+            <div>
+                <h2>Intermediate (Pre-Engineering)</h2>
+                <p>ST. Lawrence's Girls Govt Degree College, 2024</p>
+            </div>
+            <div>
+                <h2>Matriculation (Science)</h2>
+                <p>The Educator School, 2022</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- ===== SKILL SECTION ===== -->
+  <div id="skill">
+    <div class="container">
+        <h1>Skill</h1>
+        <div class="skills">
+            <div class="skill-list">
+                <p>HTML</p>
+                <p>57%</p>
+            </div>
+            <div class="skill-level">
+                <div class="skill-bar html"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="skill-list">
+                <p>CSS</p>
+                <p>70%</p>
+            </div>
+            <div class="skill-level">
+                <div class="skill-bar css"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="skill-list">
+                <p>Microsoft Office</p>
+                <p>58%</p>
+            </div>
+            <div class="skill-level">
+                <div class="skill-bar microsoft"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="skill-list">
+                <p>C programming</p>
+                <p>77%</p>
+            </div>
+            <div class="skill-level">
+                <div class="skill-bar cprogramming"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <div id="experience">
+    <div class="container">
+        <h1 class="sub-title">Experience</h1>
+        <div class="education-list">
+            <div>
+                <h2>Certification Experience</h2>
+                <p>Learning HTML, CSS and Python<br>Learning Microsoft Office and C programming</p>
+            </div>
+            <div>
+                <h2>Academic Project Library Management System</h2>
+                <p>Built using C programming <br>Implemented search, add, delete and update functions <br>Use File Handling to store records</p>
+            </div>
+            <div>
+                <h2>Collaborative Classroom Projects</h2>
+                <p>Worked with classmates on coding task and improved teamwork and communication skill</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- ===== PORTFOLIO SECTION ===== -->
+  <div id="PORTFOLIO">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="picpic1.jpeg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to talented people around the world. Download it</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="picpic2.jpeg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to talented people around the world. Download it</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="picpic3.jpeg">
+                <div class="layer">
+                    <h3>Photoshop website</h3>
+                    <p>The website connects you to talented people around the world. Download it</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>simranaveed941@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>03280110766</p>
+                <div class="social-icon">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/_.simranaveed?igsh=MWM0ZDE4N3p6NnU3YQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required><br>
+                    <input type="email" name="Email" placeholder="Your Email" required><br>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+             
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- ===== JS: Mobile Menu (Place here, before closing body) ===== -->
+  <script>
+    let nav = document.querySelector("nav ul");
+    let menuBtn = document.querySelector(".menu-btn");
+    let closeBtn = document.querySelector(".close-btn");
+
+    menuBtn.onclick = () => {
+        nav.style.right = "0"; // open menu
+    };
+
+    closeBtn.onclick = () => {
+        nav.style.right = "-250px"; // close menu
+    };
+  </script>
+
+</body>
+</html>
